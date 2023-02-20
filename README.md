@@ -9,6 +9,7 @@ Contents:
 ### picoCTF
 
 #### 2021
-* Let's get dynamic
+* `Easy as GDB`
+* `Let's get dynamic`
 
 
