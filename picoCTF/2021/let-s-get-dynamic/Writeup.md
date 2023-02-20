@@ -79,7 +79,7 @@ $1 = 49
 ```
 
 Huh? Is the program broken once again? Why is only half of the flag compared  
-with the user input?  
+to the user input?  
 Let's have a look at it in Ghidra again...  
 Going back to the main function, we first see some encrypted string being  
 created on the stack:
@@ -132,7 +132,8 @@ of the called functions using `LD_PRELOAD`.
 We write our own custom version of `strlen`, which always returns 0x31.  
 As we're at it, we also write our own `memcmp`, which nicely prints the buffers  
 passed to it on stdout (and always returns 0). This should avoid the hassle with  
-finding the actual `memcmp` start after all that dynamic linker magic...
+finding the actual `memcmp` start after all that dynamic linker magic...  
+(For the actual code, see `debug.c`.)
 
 Let's try it...:
 ```
