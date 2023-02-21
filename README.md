@@ -9,7 +9,7 @@ Contents:
 ### picoCTF
 
 #### 2021
-* `Easy as GDB`
-* `Let's get dynamic`
+* [Easy as GDB](picoCTF/2021/easy-as-gdb)
+* [Let's get dynamic](picoCTF/2021/let-s-get-dynamic)
 
 
