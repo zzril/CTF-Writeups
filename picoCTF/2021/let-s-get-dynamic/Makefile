@@ -12,7 +12,7 @@ CFLAGS=-Wall -Wextra -pedantic
 all: $(CHALLENGE_FILES) $(BIN) $(LIB)
 
 clean:
-	rm $(CHALLENGE_FILES) $(BIN) $(LIB) || true
+	rm $(BIN) $(LIB) || true
 
 # --------
 

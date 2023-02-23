@@ -5,7 +5,7 @@ CHALLENGE_FILES=brute
 all: $(CHALLENGE_FILES)
 
 clean:
-	rm $(CHALLENGE_FILES)
+	rm $(CHALLENGE_FILES) || true
 
 # --------
 
