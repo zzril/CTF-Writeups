@@ -10,6 +10,6 @@ clean:
 # --------
 
 brute:
-	wget 'https://mercury.picoctf.net/static/84a60a8ccee38ac906f28075221fa2e6/brute'
+	wget 'https://mercury.picoctf.net/static/84a60a8ccee38ac906f28075221fa2e6/brute' && chmod u+x $@
 
 

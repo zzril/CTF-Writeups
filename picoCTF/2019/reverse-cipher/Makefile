@@ -10,7 +10,7 @@ clean:
 # --------
 
 rev:
-	wget 'https://jupiter.challenges.picoctf.org/static/48babf8f8c4c6b8baf336680ea5b9ddf/rev'
+	wget 'https://jupiter.challenges.picoctf.org/static/48babf8f8c4c6b8baf336680ea5b9ddf/rev' && chmod u+x $@
 
 rev_this:
 	wget 'https://jupiter.challenges.picoctf.org/static/48babf8f8c4c6b8baf336680ea5b9ddf/rev_this'

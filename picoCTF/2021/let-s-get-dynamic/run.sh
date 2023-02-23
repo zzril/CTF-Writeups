@@ -1,5 +1,10 @@
 #! /bin/sh -e
 
-make && echo && LD_PRELOAD=./debug.so ./a.out
+make
+
+echo
+
+echo "Running binary..."
+LD_PRELOAD=./debug.so ./a.out
 
 
