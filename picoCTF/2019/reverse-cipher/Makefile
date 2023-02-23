@@ -5,7 +5,7 @@ CHALLENGE_FILES=rev rev_this
 all: $(CHALLENGE_FILES)
 
 clean:
-	rm $(CHALLENGE_FILES) *.hex *.txt || true
+	rm $(CHALLENGE_FILES) patch *.hex *.txt || true
 
 # --------
 
