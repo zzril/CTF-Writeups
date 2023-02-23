@@ -4,7 +4,7 @@ make
 
 echo
 
-echo "Running binary..."
+echo "Running binary... (input expected)"
 LD_PRELOAD=./debug.so ./a.out
 
 
