@@ -109,8 +109,8 @@ We can do so for example in `hexedit`, or using `vim`/`xxd`.
 
 Let's try...
 ```
-$ xxd -p rev rev.hex
-$ sed -e 's/83c005/83e805/g;s/83e802/83c002/g' rev.hex > patch.hex
+$ xxd -p rev patch.hex
+$ sed -e 's/83c005/83e805/g;s/83e802/83c002/g' -i patch.hex
 $ xxd -r -p patch.hex patch && chmod u+x patch
 $ ./patch && cat rev_this
 picoCTF{r3v3rs312528e05}
