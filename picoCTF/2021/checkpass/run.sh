@@ -1,5 +1,5 @@
 #! /bin/sh -e
 
-gdb -batch -x solve.py
+make && echo && gdb -batch -x solve.py
 
 
