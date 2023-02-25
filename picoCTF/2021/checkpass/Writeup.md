@@ -305,12 +305,14 @@ As we have already cracked the substitution part, we know what character in the
 password caused the current value in `bl`. Since the chosen password does not  
 contain duplicate characters, we also know what index in the password leads to  
 the current comparison!  
-Having cracked the cubstitution part also allows us to find the character that  
+Having cracked the substitution part also allows us to find the character that  
 would get substituted by the compare value at `[rdi + rbp*0x1]`. This is the  
 character that would lead to the comparison being evaluated to true, so this  
 must be the correct value at the found index in the password.
 
 `solve.py` implements this mechanism and spits out the flag:  
 `picoCTF{t1mingS1deChann3l_gVQSfJxl3VPFGQ}`
+
+(Not sure where the timing side channel is here.)
 
 
